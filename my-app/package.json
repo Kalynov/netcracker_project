@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href \"https://kalynov.github.io/netcracker_project/\" && ngh --dir dist/my-app",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
