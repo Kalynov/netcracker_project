@@ -1,15 +1,4 @@
 .main-block {
-  background-color:rgba($color: GREY, $alpha: 0.7);
-  width: 100%;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.project-title {
-  margin-left: 20px;
-  font-size: 3vw;
-  flex-grow: 0.5;
-  flex-shrink: 0.1;
-  flex-basis: 100px;
+  width: 100vw;
+  height: 100vh;
 }

@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { UsersComponent } from './users/users.component';
 import { TasksComponent } from './tasks/tasks.component';
-import { SpaModule } from './spa/spa.module';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { SpaModule } from './spa/spa.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    SpaModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

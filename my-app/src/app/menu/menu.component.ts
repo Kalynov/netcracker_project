@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  items =["add", "tascs", "process", "search", "profile"];
+
   constructor() {
 
   }
