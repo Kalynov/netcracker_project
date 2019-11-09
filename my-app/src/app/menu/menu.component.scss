@@ -1,9 +1,9 @@
 $logos: (
-  ("add", url("assets/image/add.svg?sanitize=true")),
-  ("tascs", url("assets/image/tascs.svg?sanitize=true")),
-  ("process", url("assets/image/process.svg?sanitize=true")),
-  ("search", url("assets/image/search.svg?sanitize=true")),
-  ("profile", url("assets/image/profileLogo.svg?sanitize=true"))
+  ("add", url("../../assets/image/add.svg?sanitize=true")),
+  ("tascs", url("../../assets/image/tascs.svg?sanitize=true")),
+  ("process", url("../../assets/image/process.svg?sanitize=true")),
+  ("search", url("../../assets/image/search.svg?sanitize=true")),
+  ("profile", url("../../assets/image/profileLogo.svg?sanitize=true"))
 );
 
 .nav-bar {
@@ -28,9 +28,10 @@ $logos: (
     height: 50px;
     margin: 20px;
     cursor: pointer;
-    img {
-      width: 100%;
-      height: 100%;
+    @each $logo in $logos {
+      &.#{nth($logo,1)} {
+        background: #{nth($logo,2)} no-repeat center/100%;
+      }
     }
   }
 }

@@ -1,7 +1,6 @@
 <div class = "nav-bar">
   <div class="nav-bar__wrapper">
-      <div *ngFor="let icon of iconItems" class = "nav-bar__item" >
-        <img  src="{{icon}}">
+      <div *ngFor="let item of items" class = "nav-bar__item {{item}}" >
       </div>
   </div>
 </div>
